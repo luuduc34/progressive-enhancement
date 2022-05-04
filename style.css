@@ -1,0 +1,90 @@
+body{
+    width: 90%;
+    margin: auto;    
+    /* background: -webkit-radial-gradient(rgb(22, 135, 237), rgb(20, 55, 90));
+    background: radial-gradient(rgb(22, 135, 237), rgb(20, 55, 90)); */
+    background-image: url('./background_pastel.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    color: rgb(81, 0, 0);    
+}
+
+blockquote{    
+    margin: auto; /* center */
+    font-size: 160%;
+    width: 50%;
+    background-color: rgb(197, 197, 197); 
+    border-left: 3px solid brown; /* (size, solid, color) */
+    padding-left: 30px;
+    
+}
+
+q{
+   /*  font-size: 160%;
+    background-color: darkgrey; */
+    /* padding: 80px 0 80px 0; */
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+}
+
+q.farmer,.villagers{    
+    border-left: 3px solid rgb(216, 2, 173);
+    
+}
+header > h1{
+    background-color: yellow;
+    text-align: center;
+}
+
+/* blockquote > p{
+    font-style: italic;
+} */
+
+.good,.bad{
+    text-transform: capitalize;
+}
+.bad{
+    color: red;
+}
+.good{
+    color: green;
+}
+
+tr:nth-child(even) { /* backgroud zebra effect in table */
+    background-color: rgb(197, 197, 197);
+}
+
+.first{
+    font-weight: bold;
+}
+
+.img{
+    width: 50%;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.notification{
+    background:#FFFFDD;
+    border:3px solid #DDDDCC;    
+    font-weight:bold;
+    color: #333300;
+    position: fixed;
+    text-align: center;      
+  }
+
+  .inside-container{    
+    bottom: 0;
+    right: 0;
+    z-index: 3;    
+    height: 50px;
+    width: 150px;
+    overflow: auto;
+}

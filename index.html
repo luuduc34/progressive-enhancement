@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
     <title>Progressive-enhancement</title>
 </head>
 <body>
     <header>
     <h1>The Story of the Chinese Farmer</h1>
     </header>
-    <article>
+    <section>
     <em>11 may 2016, Alexandre Gorius</em><br>
-    <img src="https://cdn-images-1.medium.com/max/1000/1*2PCmLZyzQaF2pyKYkSTFpA.jpeg" alt="">
+    <img class="img" title="man with an extinguisher" src="https://cdn-images-1.medium.com/max/1000/1*2PCmLZyzQaF2pyKYkSTFpA.jpeg" alt="man with an extinguisher">
 
     <h3>Preamble</h3>
 
@@ -24,17 +27,54 @@
 
     <h3>The story</h3>
 
-    <blockquote>Once upon a time there was a Chinese farmer whose horse ran away. That evening, all of his neighbors came around to commiserate. They said, “We are so sorry to hear your horse has run away. This is most unfortunate.” The farmer said, “Maybe.” The next day the horse came back bringing seven wild horses with it, and in the evening everybody came back and said, “Oh, isn’t that lucky. What a great turn of events. You now have eight horses!” The farmer again said, “Maybe.”</blockquote>
+    <blockquote><p>Once upon a time there was a Chinese farmer whose horse ran away. That evening, all of his neighbors came around to commiserate. They said, <q class="villagers">We are so sorry to hear your horse has run away. This is most unfortunate.</q> The farmer said, <q class="farmer"><strong>Maybe.</strong></q> The next day the horse came back bringing seven wild horses with it, and in the evening everybody came back and said, <q class="villagers">Oh, isn’t that lucky. What a great turn of events. You now have eight horses!</q> The farmer again said, <q class="farmer"><strong>Maybe.</strong></q></p>
 
-    <blockquote>The following day his son tried to break one of the horses, and while riding it, he was thrown and broke his leg. The neighbors then said, “Oh dear, that’s too bad,” and the farmer responded, “Maybe.” The next day the conscription officers came around to conscript people into the army, and they rejected his son because he had a broken leg. Again all the neighbors came around and said, “Isn’t that great!” Again, he said, “Maybe.”</blockquote>
+    <p>The following day his son tried to break one of the horses, and while riding it, he was thrown and broke his leg. The neighbors then said, <q class="villagers">Oh dear, that’s too <span class="bad">bad</span>,</q> and the farmer responded, <q class="farmer"><strong>Maybe.</strong></q> The next day the conscription officers came around to conscript people into the army, and they rejected his son because he had a broken leg. Again all the neighbors came around and said, <q class="villagers">Isn’t that great!</q> Again, he said, <q class="farmer"><strong>Maybe.</strong></q></p>
 
-    <blockquote>The whole process of nature is an integrated process of immense complexity, and it’s really impossible to tell whether anything that happens in it is good or bad — because you never know what will be the consequence of the misfortune; or, you never know what will be the consequences of good fortune.</blockquote>
+    <p>The whole process of <a title="nature description" href="https://www.larousse.fr/dictionnaires/francais/nature/53894" alt="nature description" target="new">nature </a>is an integrated process of immense complexity, and it’s really impossible to tell whether anything that happens in it is <span class="good">good</span> or <span class="bad">bad</span> — because you never know what will be the consequence of the misfortune; or, you never know what will be the consequences of <span class="good">good</span> fortune.</blockquote></p>
 
-    <em>Alan Watts</em><br>
+    <a class="alan" title="About Alan Watts" href="https://en.wikipedia.org/wiki/Alan_Watts" alt="About Alan Watts" target="new"><em>Alan Watts</em></a><br>
+    </section>
+
+    <section>
+    <p>----</p>
     <p>Here is this dialog in the form of a table</p>
-    </article>
+    <table>
+        <tr>
+            <th>Event</th>
+            <th><span class="good">Good</span> or <span class="bad">bad</span></th>
+        </tr>
+        <tr>
+            <td>Lose a horse</td>
+            <td><strong>Maybe</strong></td>
+        </tr>
+        <tr>
+            <td>Win more horses</td>
+            <td><strong>Maybe</strong></td>
+        </tr>
+        <tr>
+            <td>Son injury</td>
+            <td><strong>Maybe</strong></td>
+        </tr>
+        <tr>
+            <td>Avoid war</td>
+            <td><strong>Maybe</strong></td>
+        </tr>
+    </table>
+    </section>
+
+    <section>
+        <p>Conclusion</p>
+        <p><span class="good">Good</span> and <span class="bad">bad</span> are just one perspective. Bananas are <span class="good">good</span> for monkeys, but monkeys are not <span class="good">good</span> for bananas. Let's not make a big deal out of it...</p>
+        <p>----</p>
+    </section>
+
+    <aside class="notification inside-container">
+        <p>Notification block</p>
+    </aside>
+    
     <footer>
-        <p>Copyright Just Another Company 2017. All right reserved. Adapted from this article: <a href="https://wellsbaum.blog/2018/01/27/alan-watts-the-story-of-the-chinese-farmer/">https://wellsbaum.blog/2018/01/27/alan-watts-the-story-of-the-chinese-farmer/</a></p>
+        <p>Copyright Just Another Company 2017. All right reserved. Adapted from this article: <a title="link to the story of a chines farmer from Alan Watts" href="https://wellsbaum.blog/2018/01/27/alan-watts-the-story-of-the-chinese-farmer/" alt="link to the story of a chines farmer from Alan Watts" target="new">https://wellsbaum.blog/2018/01/27/alan-watts-the-story-of-the-chinese-farmer/</a></p>
     </footer>
 </body>
 </html>
